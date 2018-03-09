@@ -1,8 +1,9 @@
 div.pay {
     border-radius: 10px;
     width: 830px;
-    height: 370px;
+    height: 390px;
     overflow: hidden;
+    padding-left: 10%;
     /*bottom: 0;
     position: absolute;*/
 }
@@ -14,10 +15,10 @@ div.pay-back {
   /*background: url("/images/wood.png");*/
   background-color: rgba(255, 255, 255, 0.0);
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  padding-top: 0px;
+  padding-top: -5%;
   padding-right: 5%;
   padding-bottom: 0%;
-  padding-left: 5%;
+  padding-left: 15%;
   background-size:100%;
   background-repeat: no-repeat;
   height: 100%;

@@ -1,23 +1,5 @@
 /* Shop */
 
-body.pay {
-  /*background: radial-gradient(ellipse at top, rgba(58, 144, 219, 1), transparent),
-              radial-gradient(ellipse at bottom, rgba(78, 169, 52, 1), transparent);*/
-  background: radial-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.3), rgba(255,255,255,0.3));
-  /*background: url("/images/wood.png");*/
-  background-color: rgba(255, 255, 255, 0.0);
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  padding-top: 0px;
-  padding-right: 5%;
-  padding-bottom: 0%;
-  padding-left: 5%;
-  background-size:100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  margin: 0;
-  background-attachment: fixed;
-}
-
 ul.shop-global {
   list-style-type: none;
   height: 100%;
