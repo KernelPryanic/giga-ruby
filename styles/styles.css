@@ -1,0 +1,5 @@
+html.general { 
+  background: url(/images/background.png);
+	background-size: 256px 256px;
+    background-repeat: repeat;
+}
