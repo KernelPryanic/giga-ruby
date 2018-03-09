@@ -1,5 +1,445 @@
+/* ACTUAL FONT */
+@font-face {
+	font-family: "Minecraft";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../font/minecraft_font.eot") format("eot"), 
+	     url("../font/minecraft_font.woff") format("woff"), 
+	     url("../font/minecraft_font.ttf") format("truetype"), 
+	     url("../font/minecraft_font.svg#Minecraft") format("svg");
+}
+
+/* GENERAL FOR HTML */
 html.general { 
-  background: url(/images/background.png);
-	background-size: 256px 256px;
-    background-repeat: repeat;
+    background: url("/images/background-new.jpg") no-repeat center center fixed;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* CENTER */
+.language, .welcome, .logo, .menu, .howto, .description,
+.menu a, .howto, .description, .advgrid, .guides, .shop,
+.item-desc, .item-welcome, .pay { 
+    text-align: center;
+    margin: auto;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.thumb img  {
+    border: 2px solid #55c5e9;
+    padding: 5px;
+    background: #666;
+    width: 40%;
+    height: 40%;
+}
+
+.desc {
+    width: 70%;
+    height: 100%;
+    color: black;
+    font-size:x-large;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.vol {
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.75);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.75);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.75);
+}
+
+.gradient-white {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.8));
+}
+
+.gradient-radial-while {
+    background: radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+}
+
+.vote-table {
+    border-collapse: collapse;
+    border: none;
+    border-right-style:hidden;
+    border-style:hidden;
+    width: auto;
+}
+
+.div-with-table
+{
+    float: left;
+    width: 820px; height:100%; 
+    padding: 10px 0px 10px 0px; /*top right bottom left*/
+    text-align: center;
+}
+
+.cs {
+    font-family: 'Comic Sans MS';
+}
+
+.allan {
+    font-family: 'Allan';
+}
+
+.kalam {
+    font-family: 'Kalam';
+}
+
+/* CLEANING SPACE BOTH SIDES NEAR FLOAT ELEMENT */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ASPECT RATIO CONST */
+.constant-width-to-height-ratio {
+    width: 50%;
+    padding-top: 50%;
+}
+
+/* Fine grid */
+
+.fine-grid img {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
+}
+
+body.fine-grid {
+  background: #333;
+}
+
+div.fine-grid {
+  width: 100%;
+  margin: 0 auto;
+  /*overflow: auto;
+  height: 410px;*/
+}
+
+ul.fine-grid {
+  list-style-type: none;
+  /*height: 410px;*/
+}
+
+li.fine-grid img, li.fine-grid script, li.fine-grid iframe, li.fine-grid p, li.fine-grid div {
+  float: left;
+  margin: 5%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  border-radius: 10px;
+  background: url("/images/wood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+li.fine-grid img:hover, li.fine-grid script:hover, li.fine-grid iframe:hover, li.fine-grid p:hover, li.fine-grid div:hover,
+li.actual-payment img:hover, li.actual-payment script:hover, li.actual-payment iframe:hover, li.actual-payment p:hover, li.actual-payment div:hover {
+  -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+  -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+}
+
+.fine-grid.overflow-scroll-gradient {
+  position: relative;
+}
+
+.fine-grid.overflow-scroll-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 84.5%;
+  height: 50px;
+  background: linear-gradient(rgba(255, 255, 255, 0.001), white);
+  pointer-events: none;
+  transform: translate(-53.5%, 0)
+}
+
+.fine-grid.overflow-scroll-gradient__scroller {
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  height: 410px;
+  padding: 15px 0;
+  line-height: 1.0;
+  text-align: center;
+}
+
+.fine-grid.container1 {
+  height: auto;
+}
+
+.fine-grid.container2 {
+  width: 100%;
+  overflow: auto;
+}
+
+/* Tables */
+
+table.cool-table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+tr.cool-table td:first-child {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+
+}
+
+tr.cool-table td:last-child {
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+/* Vertical list */
+
+div.vertical-list {
+    width: 100%;
+}
+ 
+ul.vertical-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.vertical-list {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+li.vertical-list:last-child {
+    border: none;
+}
+
+li.vertical-list a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+    
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li.vertical-list a:hover {
+    font-size: 25px;
+    background: radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+}
+
+.container1 {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container2 {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+.overflow-scroll-gradient {
+    position: relative;
+}
+
+.overflow-scroll-gradient::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.001), white);
+    pointer-events: none;
+    transform: translate(-50%, 0)
+}
+
+.overflow-scroll-gradient__scroller {
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    height: 250px;
+    padding: 15px 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Enlargement */
+
+.enlarge {
+    -webkit-transition:  -webkit-transform .2s ease-out;
+    -moz-transition: -moz-transform .2s ease-out;
+    -o-transition: -o-transform .2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out; 
+    transition: transform .2s ease-out; 
+}
+
+.enlarge.x1_0_5:hover {
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.enlarge.x1_1:hover {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.enlarge.x1_2:hover {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.enlarge.x1_4:hover {
+    -webkit-transform:scale(1.4);
+    -moz-transform:scale(1.4);
+    -o-transform:scale(1.4);
+    transform:scale(1.4);
+}
+
+/* Grid */
+
+div.grid {
+    width: 100%;
+    /*overflow: auto;*/
+}
+
+ul.grid {
+    list-style-type: none;
+}
+
+li.grid img, li.grid script, li.grid iframe, li.grid p, li.grid div {
+    float: left;
+    margin: .3%;
+    /*border: 5px solid #fff;*/
+    
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+
+li.grid_border img, li.grid_border script, li.grid_border iframe, li.grid_border p, li.grid_border div {
+    border: 5px solid #fff;
+}
+
+li.grid_highlight img:hover, li.grid_highlight script:hover, li.grid_highlight iframe:hover, li.grid_highlight p, li.grid_highlight div {
+    -webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+}
+
+/* Gradient text linear */
+
+.linear-text-gradient {
+    font-size: 55px;
+    background: -webkit-linear-gradient(rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Disable ref highlighting */
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+/* Shine effect */
+/**
+ * shine
+ */
+
+.shine {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.shine:nth-child(1) { background: cornflowerblue; }
+.shine:nth-child(2) { background: salmon; }
+.shine:nth-child(3) { background: gray; }
+
+/**
+ * The "shine" element
+ */
+
+.shine:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.shine:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.shine:active:after {
+  opacity: 0;
 }

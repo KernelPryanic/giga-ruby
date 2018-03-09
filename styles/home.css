@@ -1,0 +1,42 @@
+div .menu {
+    width: 30%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 80%;
+    position: relative;
+}
+
+.menu.en a {
+    top: -5%;
+}
+
+.menu.ru a {
+    top: -20%;
+}
+
+.howto {
+    border: 0;
+    width: 35%;
+}
+
+li.menu img, li.menu script, li.menu iframe, li.menu p, li.menu div {
+    float: left;
+    margin: 5%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 85px;
+    height: 30px;
+    
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    
+    font-size: 160%;
+    text-align: center;
+}

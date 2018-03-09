@@ -1,29 +1,40 @@
-<div class="shop">
-	<a href="" target="_self"><img src="images/shop.png"></a>
+<div class="shop clearfix container1">
+    <a href="" target="_self"><img src="images/shop.png"></a>
     <ul class="shop-global container2">
         <li class="shop-global">
-            <div class="shop overflow-scroll-gradient container1">
-                <ul class="shop overflow-scroll-gradient__scroller container2">
-                    <li class="shop"><a onClick="description('gardener');" href="#"><img src="images/gardener.png" /></a></li>
-                    <li class="shop"><a onClick="description('baron');" href="#"><img src="images/baron.png" /></a></li>
-                    <li class="shop"><a onClick="description('king');" href="#"><img src="images/king.png" /></a></li>
-                    <li class="shop"><a onClick="description('gtb');" href="#"><img src="images/gardener-baron.png" /></a></li>
-                    <li class="shop"><a onClick="description('btk');" href="#"><img src="images/baron-king.png" /></a></li>
-                    <li class="shop"><a onClick="description('gtk');" href="#"><img src="images/gardener-king.png" /></a></li>
-                    <li class="shop"><a onClick="description('lootbag-common');" href="#"><img src="images/lootbag-common.png"/></a></li>
-                    <li class="shop"><a onClick="description('lootbag-uncommon');" href="#"><img src="images/lootbag-uncommon.png"/></a></li>
-                    <li class="shop"><a onClick="description('lootbag-rare');" href="#"><img src="images/lootbag-rare.png"/></a></li>
-                    <li class="shop"><a onClick="description('lootbag-epic');" href="#"><img src="images/lootbag-epic.png"/></a></li>
-                    <li class="shop"><a onClick="description('lootbag-legendary');" href="#"><img src="images/lootbag-legendary.png"/></a></li>
-                    <li class="shop"><a onClick="description('lootbag-artifact');" href="#"><img src="images/lootbag-artifact.png"/></a></li>
-                    <li class="shop"><a onClick="description('banknotes1');" href="#"><img src="images/ten-dollar-bill.png"/></a></li>
-                    <li class="shop"><a onClick="description('banknotes2');" href="#"><img src="images/twenty-dollar-bill.png"/></a></li>
-                    <li class="shop"><a onClick="description('banknotes3');" href="#"><img src="images/hundred-dollar-bill.png"/></a></li>
+            <div style="width: 740px; height: 400px" class="fine-grid overflow-scroll-gradient container1">
+                <ul class="fine-grid overflow-scroll-gradient__scroller container2">
+                    <li class="fine-grid"><a onClick="description('gardener');" href="#"><img src="images/gardener.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('baron');" href="#"><img src="images/baron.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('king');" href="#"><img src="images/king.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('gtb');" href="#"><img src="images/gardener-baron.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('btk');" href="#"><img src="images/baron-king.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('gtk');" href="#"><img src="images/gardener-king.png" /></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-common');" href="#"><img src="images/lootbag-common.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-uncommon');" href="#"><img src="images/lootbag-uncommon.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-rare');" href="#"><img src="images/lootbag-rare.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-epic');" href="#"><img src="images/lootbag-epic.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-legendary');" href="#"><img src="images/lootbag-legendary.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('lootbag-artifact');" href="#"><img src="images/lootbag-artifact.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('banknotes1');" href="#"><img src="images/ten-dollar-bill.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('banknotes2');" href="#"><img src="images/twenty-dollar-bill.png"/></a></li>
+                    <li class="fine-grid"><a onClick="description('banknotes3');" href="#"><img src="images/hundred-dollar-bill.png"/></a></li>
                 </ul>
             </div>
         </li>
         <li class="shop-global">
-            <div include-html="blocks/pay.html"></div> 
+            <div style="width: 850px; height: 380px;">
+                <div class="pay pay-back">
+                    <div include-html="blocks/pay.html"></div>
+                </div>
+            </div>
+            <!--<div style="width: 820px; height: 455px;">
+                <div style="border-radius: 10px; width: 800px; height: 433px; overflow: hidden; bottom: 0; position: absolute;">
+                    <iframe src="/blocks/pay.html" width="800" height="433" frameborder="0" allowtransparency="true" scrolling="no" id="frame">
+                       Sorry your browser does not support inline frames.
+                    </iframe>
+                </div>
+            </div>-->
         </li>
     </ul>
 </div>
