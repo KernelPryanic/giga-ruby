@@ -2,6 +2,10 @@ div .menu {
     width: 30%;
 }
 
+div.menu {
+    transform: translateX(2%);
+}
+
 .menu a {
     text-decoration: none;
     color: inherit;

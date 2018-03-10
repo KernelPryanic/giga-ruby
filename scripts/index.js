@@ -24,7 +24,7 @@ function applyLanguage(doc) {
     }
     elements.forEach(function(elem) {
         if (elem.lang == used || elem.lang == "any") {
-            //elem.style.display = "block"; LAGS!!
+            elem.style.display = "block";
         } else {
             elem.style.display = "none";
         }
