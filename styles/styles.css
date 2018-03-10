@@ -286,18 +286,18 @@ li.vertical-list a:hover {
     content: '';
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     height: 25px;
     background: linear-gradient(rgba(255, 255, 255, 0.001), white);
     pointer-events: none;
-    transform: translate(-50%, 0)
+    transform: translate(-52%, 0)
 }
 
 .overflow-scroll-gradient__scroller {
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.0);
     width: 100%;
-    height: 250px;
+    height: 300px;
     padding: 15px 0;
     line-height: 1.2;
     text-align: center;
