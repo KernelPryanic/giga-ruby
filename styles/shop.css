@@ -70,9 +70,14 @@ div.item-desc iframe {
     transform: translateX(10%);
 }
 
+/* ################# */
+
+
+/* ### Welcome item ### */
+
 div.item-welcome {
-    height: 270px;
-    line-height: 270px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     width: 100%;
 }
@@ -95,3 +100,21 @@ span.item-welcome {
     margin: 10px 10px 0 0;
     padding: 5px 10px;
 }
+
+/* ################### */
+
+
+/* ### Rules list ### */
+
+ul.shop-rules {
+    float: left;
+    transform: translate(5%, -15%);
+}
+
+ul.shop-rules li {
+    font-size: 30%;
+    margin: 0px 0;
+    border-bottom: 0px;
+}
+
+/* ################# */

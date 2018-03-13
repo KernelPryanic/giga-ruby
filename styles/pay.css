@@ -9,9 +9,7 @@ div.pay {
 }
 
 div.pay-back {
-  /*background: radial-gradient(ellipse at top, rgba(58, 144, 219, 1), transparent),
-              radial-gradient(ellipse at bottom, rgba(78, 169, 52, 1), transparent);*/
-  background: radial-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+  background: radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5), rgba(255,255,255,0.3));
   /*background: url("/images/wood-pay.png");*/
   background-color: rgba(255, 255, 255, 0.0);
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
